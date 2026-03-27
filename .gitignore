@@ -41,7 +41,7 @@ coverage.xml
 *.log
 *.bak
 *.tmp
-MyPay4_Generator_v2.2.0.spec
+*.spec
 Manuale_Integrazione_Ente-MyPay4_v2.2_RegionePuglia.pdf
 
 # OS specific

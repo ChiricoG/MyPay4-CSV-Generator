@@ -2,9 +2,18 @@
 import PyInstaller.__main__
 import os
 import sys
+import re
+
+# Leggi la versione da pyproject.toml
+with open("pyproject.toml", "r", encoding="utf-8") as f:
+    text = f.read()
+    version_match = re.search(r'version\s*=\s*"(.*?)"', text)
+    version = version_match.group(1) if version_match else "unknown"
+
+# Nome finale dell'eseguibile (es: MyPay4_Generator_v2.3.2)
+exe_name = f"MyPay4_Generator_v{version}"
 
 # Percorso degli asset (logo)
-# Su Windows il separatore per --add-data è ';'
 assets_sep = ";" if sys.platform.startswith("win") else ":"
 add_data = f"assets{assets_sep}assets"
 
@@ -12,11 +21,11 @@ add_data = f"assets{assets_sep}assets"
 src_path = os.path.abspath("src")
 
 PyInstaller.__main__.run([
-    'main.py',                      # Entry point (il wrapper root)
+    'main.py',                      # Entry point
     '--onefile',                    # Unico file EXE
-    '--windowed',                   # Nessuna console all'avvio
-    '--name=MyPay4_Generator_v2.2.0',
-    f'--add-data={add_data}',       # Include la cartella assets nell'EXE
-    f'--paths={src_path}',          # Aggiunge src al path di ricerca moduli
-    '--clean',                      # Pulisce la cache prima della build
+    '--windowed',                   # Nessuna console 
+    f'--name={exe_name}',           # Nome dinamico basato sulla versione
+    f'--add-data={add_data}',       # Include assets
+    f'--paths={src_path}',          # Aggiunge src al path
+    '--clean',                      # Pulisce cache 
 ])
