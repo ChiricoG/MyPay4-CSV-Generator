@@ -14,7 +14,7 @@
 
 Per segnalare una vulnerabilità in modo responsabile:
 
-1. Invia una e-mail a: `PLACEHOLDER_SECURITY_EMAIL`
+1. Invia una e-mail a: `gianmarco.chirico@clebari.com`
 2. Includi una descrizione dettagliata del problema, i passi per riprodurlo
    e, se disponibile, una Proof of Concept.
 3. Riceverai una risposta entro **5 giorni lavorativi**.

@@ -10,8 +10,7 @@ Copyright © 2025 Gianmarco Chirico — deda.cle
 
 ## Contributori
 
-I contributori successivi alla versione 2.1.0 sono elencati nel file
-[CHANGELOG.md](CHANGELOG.md) e nella cronologia Git del repository.
+I contributori successivi alla versione 2.1.0 sono elencati nella cronologia Git del repository.
 
 ## Ringraziamenti
 

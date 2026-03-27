@@ -14,10 +14,10 @@ Tutti i partecipanti devono rispettare il [Contributor Covenant Code of Conduct]
 
 ## Come segnalare un bug
 
-1. Verifica che il bug non sia già stato segnalato nelle [Issue aperte](https://github.com/PLACEHOLDER_ENTE/mypay4-csv-generator/issues).
+1. Verifica che il bug non sia già stato segnalato nelle [Issue aperte](https://github.com/ChiricoG/mypay4-csv-generator/issues).
 2. Apri una nuova Issue utilizzando il template **Bug report**.
 3. Includi:
-   - Versione del software (`mypay4_csv_generator_v2_1_0.py`, riga 1).
+   - Versione del software (vedi `pyproject.toml`).
    - Sistema operativo e versione Python.
    - Passi per riprodurre il problema.
    - Comportamento atteso vs. comportamento effettivo.
@@ -56,9 +56,9 @@ Tutti i partecipanti devono rispettare il [Contributor Covenant Code of Conduct]
    ```
 5. Verifica la formattazione:
    ```bash
-   ruff check mypay4_csv_generator_v2_1_0.py
+   ruff check src/
    ```
-6. Aggiorna `CHANGELOG.md` nella sezione `[Unreleased]`.
+6. Descrivi le modifiche apportate nella Pull Request.
 7. Apri la Pull Request verso il branch `main` con una descrizione chiara.
 
 ---
@@ -71,7 +71,7 @@ Tutti i partecipanti devono rispettare il [Contributor Covenant Code of Conduct]
 - **Header SPDX**: ogni file sorgente deve iniziare con:
   ```python
   # SPDX-License-Identifier: EUPL-1.2
-  # SPDX-FileCopyrightText: 2025 <Nome Autore>
+  # SPDX-FileCopyrightText: 2025 Gianmarco Chirico
   ```
 - **Costanti** in `UPPER_SNAKE_CASE`, funzioni private con prefisso `_`.
 - **Messaggi di errore**: usare i codici standardizzati `MP-NNN` definiti in `VALIDATION_ERRORS`.
