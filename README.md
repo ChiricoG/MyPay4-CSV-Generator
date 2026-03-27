@@ -55,7 +55,7 @@ Il software implementa integralmente il **tracciato di import versione 1\_4** de
 
 | Componente | Versione minima | Note |
 |---|---|---|
-| Python | 3.9 | Incluso in molte distribuzioni Linux |
+| Python | 3.9 ||
 | Pillow | 9.0 (opzionale) | Solo per visualizzare il logo |
 
 ---
