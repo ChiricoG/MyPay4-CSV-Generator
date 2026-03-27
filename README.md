@@ -23,7 +23,6 @@ Applicazione desktop per la creazione, modifica e validazione di file CSV nel fo
 - [Sicurezza](#sicurezza)
 - [Licenza](#licenza)
 - [Autori](#autori)
-- [Riconoscimenti](#riconoscimenti)
 
 ---
 
