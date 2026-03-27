@@ -1,0 +1,9 @@
+# Dipendenze obbligatorie
+# Python >= 3.9 (tkinter incluso nella distribuzione standard)
+
+# Dipendenze opzionali
+Pillow>=9.0.0          # Visualizzazione logo (facoltativo)
+
+# Dipendenze di sviluppo / test (non installare in produzione)
+# pytest>=7.0
+# ruff>=0.4

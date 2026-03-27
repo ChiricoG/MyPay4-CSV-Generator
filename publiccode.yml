@@ -1,0 +1,115 @@
+publiccodeYmlVersion: "0.3"
+
+name: MyPay4 CSV Generator
+applicationSuite: MyPay4
+url: "https://github.com/PLACEHOLDER_ENTE/mypay4-csv-generator"
+landingURL: "https://github.com/PLACEHOLDER_ENTE/mypay4-csv-generator"
+
+createdAt: "2022-06-27"
+releaseDate: "2025-03-27"
+
+softwareVersion: "2.3.2"
+developmentStatus: stable
+
+softwareType: standalone/desktop
+
+roadmap: "https://github.com/PLACEHOLDER_ENTE/mypay4-csv-generator/issues"
+
+platforms:
+  - windows
+  - linux
+  - mac
+
+categories:
+  - financial
+  - it-service-management
+
+usedBy:
+  - PLACEHOLDER_ENTE
+
+logo: assets/logo_mypay4.png
+
+maintenance:
+  type: community
+  contacts:
+    - name: Gianmarco Chirico
+      affiliation: deda.cle
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Gianmarco Chirico - deda.cle
+  repoOwner: PLACEHOLDER_ENTE
+  authorsFile: AUTHORS.md
+
+intendedAudience:
+  scope:
+    - local-authorities
+    - finance-and-economic-development
+  countries:
+    - it
+
+description:
+  it:
+    localisedName: Generatore CSV MyPay4 - Tracciato 1_4
+    genericName: Generatore CSV Dovuti
+    shortDescription: >
+      Applicazione desktop per la creazione, modifica e validazione di file CSV
+      nel formato MyPay4 tracciato 1_4, conforme alle specifiche di integrazione
+      della Regione Puglia per il portale dei pagamenti PagoPA.
+    longDescription: >
+      MyPay4 CSV Generator è un'applicazione desktop (Python/Tkinter) che
+      consente agli operatori degli Enti Locali di creare e gestire i flussi CSV
+      di dovuti da importare nel portale dei pagamenti MyPay4 della Regione
+      Puglia, intermediario PagoPA.
+
+      Funzionalità principali:
+
+      - Creazione guidata di righe CSV con validazione in tempo reale di tutti i
+        campi obbligatori e facoltativi del tracciato 1_4 (incluso supporto
+        multibeneficiario e bilancio XML).
+
+      - Importazione di CSV esistenti per modifica o integrazione.
+
+      - Generazione automatica dello IUD (con prefisso configurabile).
+
+      - Editor visuale per la struttura XML del bilancio (capitoli, uffici,
+        accertamenti).
+
+      - Funzione di aumento massivo degli importi (percentuale o valore fisso)
+        con opzioni avanzate di gestione del bilancio XML.
+
+      - Esportazione in formato ZIP pronto per l'upload via web service
+        paaSILAutorizzaImportFlusso.
+
+      - Logging rotante su file per audit e diagnostica.
+
+      Il software implementa integralmente il tracciato di import versione 1_4
+      descritto nel "Manuale Integrazione Ente - MyPay4 v2.2" (Regione Puglia,
+      febbraio 2025).
+    documentation: "https://github.com/PLACEHOLDER_ENTE/mypay4-csv-generator/blob/main/README.md"
+    apiDocumentation: "https://pagamenti.regione.puglia.it/MyPay/ws/pa/services/PagamentiTelematiciDovutiPagati.wsdl"
+    features:
+      - Generazione e validazione CSV tracciato MyPay4 1_4
+      - Supporto pagamenti multibeneficiario (flagMultiBeneficiario)
+      - Editor bilancio XML (capitoli, uffici, accertamenti)
+      - Aumento massivo importi con gestione bilancio XML
+      - Importazione e modifica di CSV esistenti
+      - Esportazione ZIP compatibile con paaSILAutorizzaImportFlusso
+      - Logging rotante su file per audit
+      - Interfaccia grafica Tkinter (nessuna dipendenza da browser)
+    #screenshots:
+    #  - assets/screenshot_main.png
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
+
+dependsOn:
+  open:
+    - name: Python
+      version: ">=3.9"
+      optional: false
+    - name: Pillow
+      version: ">=9.0"
+      optional: true
