@@ -43,6 +43,7 @@ coverage.xml
 *.tmp
 *.spec
 Manuale_Integrazione_Ente-MyPay4_v2.2_RegionePuglia.pdf
+mypay4-csv-generator-web/
 
 # OS specific
 Thumbs.db
