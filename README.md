@@ -11,6 +11,7 @@ Applicazione desktop per la creazione, modifica e validazione di file CSV nel fo
 ## Indice
 
 - [Descrizione](#descrizione)
+- [Manuale Utente](MANUALE_UTENTE.md)
 - [Funzionalità](#funzionalità)
 - [Prerequisiti](#prerequisiti)
 - [Installazione](#installazione)
