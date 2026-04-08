@@ -18,10 +18,7 @@ Applicazione desktop per la creazione, modifica e validazione di file CSV nel fo
 - [Utilizzo](#utilizzo)
 - [Struttura del progetto](#struttura-del-progetto)
 - [Tracciato CSV supportato](#tracciato-csv-supportato)
-- [Configurazione](#configurazione)
 - [Test](#test)
-- [Contributing](#contributing)
-- [Sicurezza](#sicurezza)
 - [Licenza](#licenza)
 - [Autori](#autori)
 
@@ -57,6 +54,10 @@ Il software implementa integralmente il **tracciato di import versione 1\_4** de
 |---|---|---|
 | Python | 3.9 ||
 | Pillow | 9.0 (opzionale) | Solo per visualizzare il logo |
+
+```powershell
+python -m pip -r install requirements.txt
+```
 
 ---
 
